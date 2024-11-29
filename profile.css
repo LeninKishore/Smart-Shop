@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:#78d98f;
+    overflow-x: hidden;
+}
+
+.container {
+    background: #fff;
+    width: 100%; /* Full width for mobile */
+    max-width: 540px; /* Keep original width for desktops */
+    height: auto; /* Allow height to adjust dynamically */
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+    border-radius: 10px;
+    padding: 15px; /* Add padding for spacing */
+}
+
+.leftbox {
+    width: 100%; /* Full width for mobile */
+    height: auto; /* Auto height for mobile */
+    background: #f6d4d8;
+    display: flex; /* Align navigation horizontally */
+    justify-content: center;
+    gap: 15px; /* Add spacing between icons */
+    padding: 10px 0;
+    box-shadow: none; /* Remove shadow for simplicity */
+    border: none;
+    position: relative; /* Adjust position for mobile layout */
+}
+
+nav a {
+    list-style: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 1.5em; /* Increase size for better visibility */
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f3a847;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+nav a.active {
+    color: #f3a847;
+}
+
+.rightbox {
+    width: 100%; /* Full width for mobile */
+    margin-left: 0; /* Remove left margin for mobile */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+h1 {
+    color: #f3a847;
+    font-size: 1.8rem; /* Larger font for mobile */
+    margin: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 14px; /* Larger font for better readability */
+    letter-spacing: 1px;
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.input,
+p {
+    border: 0;
+    border-bottom: 2px solid #3fb6a8;
+    width: 100%; /* Full width for mobile */
+    font-size: 1rem; /* Larger font for readability */
+    padding: 10px 0;
+    color: #070707;
+    outline: none;
+}
+
+.updateButton {
+    text-transform: uppercase;
+    font-size: 16px; /* Larger font for button text */
+    border: 0;
+    color:black;
+    background: #f6d4d8;
+    padding: 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%; /* Full width button */
+    text-align: center;
+}
+
+.tabShow {
+    transition: all 0.5s ease-in;
+    width: 100%; /* Full width for content */
+    position: relative; /* Ensure proper alignment */
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .container {
+        margin-top: 5%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 12px;
+    }
+
+    .input,
+    p {
+        font-size: 0.9em;
+    }
+
+    .updateButton {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%; /* Full width for very small screens */
+        margin-top: 2%;
+    }
+
+    .leftbox {
+        flex-direction: row; /* Keep icons horizontal */
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1.3em; /* Smaller icons for very small screens */
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 11px;
+    }
+
+    .input,
+    p {
+        font-size: 0.85em;
+    }
+
+    .updateButton {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

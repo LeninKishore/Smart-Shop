@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html leng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://kit.fontawesome.com/cacf32ff12.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/jpg" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="container">
+        <div class="leftbox">
+            <nav>
+                <a onclick="tabs(0)" class="tab active">
+                    <i class="fas fa-user"></i>
+                </a>
+                <a onclick="tabs(1)" class="tab">
+                    <i class="far fa-credit-card"></i>
+                </a>
+                <a onclick="tabs(2)" class="tab">
+                    <i class="fas fa-tv"></i>
+                </a>
+                <a onclick="tabs(3)" class="tab">
+                    <i class="fas fa-tasks"></i>
+                </a>
+                <a onclick="tabs(4)" class="tab">
+                    <i class="fas fa-cog"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <div class="profile tabShow">
+                <h1>Personal Information</h1>
+                <h2>Name</h2>
+                <input type="text" class="input">
+                <h2>Gender</h2>
+                <input type="text" class="input" >
+                <h2>Birthday</h2>
+                <input type="text" class="input">
+                <h2>Email</h2>
+                <input type="email" class="input" >
+                <h2>Password</h2>
+                <input type="password" class="input" >
+                <button class="updateButton">
+                    update
+                </button>
+            </div>
+            <div class="Payment tabShow">
+                <h1>Shipment Information</h1>
+                <h2>Billing Adress</h2>
+                <input type="text" class="input" >
+                <h2>Pincode</h2>
+                <input type="text" class="input" >
+                <h2>Last Order Shipped On</h2>
+                <input type="number" class="input" >
+                <h2>Reedem Card</h2>
+                <input type="text" class="input"  >
+                <button class="updateButton">
+                    update
+                </button>
+            </div>
+            <div class="Subscription tabShow">
+                <h1>Subscription Information</h1>
+                <h2>Payment Date</h2>
+                <p>November 30, 2024 </p>
+                <h2>Date of Next Payment</h2>
+                <p>November 30, 2025</p>
+                <h2>Plan</h2>
+                <p>Yearly</p>
+                <button class="updateButton">
+                    update
+                </button>
+            </div>
+            <div class="Privacy tabShow">
+                <h1>Privacy Setting</h1>
+                <h2>Manage Email Notification</h2>
+                <input type="text" class="input" >
+                <h2>Manage Privacy Settings</h2>
+                <input type="text" class="input" >
+                <h2>Terms Of Use</h2>
+                <input type="text" class="input" >
+                <button class="updateButton">
+                    update
+                </button>
+            </div>
+            <div class="settings tabShow">
+                <h1>Account Setting</h1>
+                <h2>Hold Subscription</h2>
+                <input type="text" class="input">
+                <h2>Cancel Subscription</h2>
+                <input type="text" class="input">
+                <h2>Your Devices</h2>
+                <input type="text" class="input">
+                <h2>Referrals</h2>
+                <input type="text" class="input" >
+                <button class="updateButton">
+                    update
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+
+</body>
+</html>
