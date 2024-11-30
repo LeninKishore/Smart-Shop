@@ -80,8 +80,168 @@ background-color:#40aa54;}
     color: #00c853;
 }
 body.dark-mode {
-    background-color: #1e1e1e;
-    color: #f5f5f5;
+    background-color: #1f1f1f; /* Darker background for better contrast */
+    color: #e0e0e0; /* Slightly off-white text color for better readability */
+}
+
+/* Menu Links */
+body.dark-mode .menu li a {
+    color: #e0e0e0; /* Light text color for menu links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+body.dark-mode .menu li a:hover {
+    color: #40aa54; /* Highlight on hover */
+}
+body.dark-mode .product-heading h3{
+    color: white;
+}
+/* Product Boxes */
+body.dark-mode .product-box {
+    background-color: #1f1f1f; /* Dark background for product boxes */
+    border: 1px solid #444; /* Subtle border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+body.dark-mode .product-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+/* Product Text */
+body.dark-mode .product-box strong {
+    color: #e0e0e0; /* Light text color for product names */
+}
+
+body.dark-mode .product-box .quantity,
+body.dark-mode .product-box .price {
+    color: #b0b0b0; /* Lighter color for quantity and price */
+}
+
+/* Cart Modal */
+body.dark-mode .cart-modal {
+    background: #1f1f1f; /* Dark background for cart modal */
+    color: #e0e0e0; /* Light text color in cart modal */
+}
+
+/* Cart Header */
+body.dark-mode .cart-header {
+    border-bottom: 1px solid #444; /* Subtle border */
+}
+body.dark-mode #popular-bundle-pack{
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+}
+/* Close Cart Button */
+body.dark-mode .close-cart {
+    color: #e0e0e0; /* Light color for close button */
+}
+
+/* Cart Items */
+body.dark-mode .cart-item {
+    border-bottom: 1px solid #444; /* Subtle border for cart items */
+}
+
+/* Buy Button */
+body.dark-mode .buy-btn {
+    background-color: #4eb060; /* Green background for buy button */
+    color: white; /* White text for buy button */
+}
+
+body.dark-mode .buy-btn:hover {
+    background-color: #3a9348; /* Darker green on hover */
+}
+
+/* Like Button */
+body.dark-mode .like-btn {
+    color: #c9c9c9; /* Lighter color for like button */
+}
+
+body.dark-mode .like-btn:hover {
+    color: #ff6c57; /* Red on hover */
+}
+
+/* Right Navigation */
+body.dark-mode .right-nav .cart,
+body.dark-mode .right-nav .user-profile {
+    background-color: #2a2a2a; /* Dark background for cart and user profile */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Cart Count Badge */
+body.dark-mode #cart-count {
+    background-color: #00c853; /* Green background for cart count */
+    color: white; /* White text for cart count */
+}
+
+/* Additional Hover Effects */
+body.dark-mode .cart-btn:hover,
+body.dark-mode .theme-toggle:hover {
+    background-color: #444; /* Darker background on hover */
+    color: #40aa54; /* Highlight color on hover */
+}
+body.dark-mode {
+    background-color: #1b1919; /* Dark background */
+    color: #f5f5f5; /* Light text color */
+}
+
+body.dark-mode .menu li a {
+    color: #f5f5f5; /* Light text color for menu links */
+}
+
+body.dark-mode .product-box {
+    background-color: #2c2c2c; /* Dark background for product boxes */
+    border: 1px solid #444; /* Subtle border */
+}
+
+body.dark-mode .product-box strong {
+    color: #f5f5f5; /* Light text color for product names */
+}
+
+body.dark-mode .product-box .quantity,
+body.dark-mode .product-box .price {
+    color: #ccc; /* Lighter color for quantity and price */
+}
+
+body.dark-mode .cart-modal {
+    background: #2c2c2c; /* Dark background for cart modal */
+    color: #f5f5f5; /* Light text color in cart modal */
+}
+
+body.dark-mode .cart-header {
+    border-bottom: 1px solid #444; /* Subtle border */
+}
+
+body.dark-mode .close-cart {
+    color: #f5f5f5; /* Light color for close button */
+}
+
+body.dark-mode .cart-item {
+    border-bottom: 1px solid #444; /* Subtle border for cart items */
+}
+
+body.dark-mode .buy-btn {
+    background-color: #4eb060; /* Green background for buy button */
+    color: white; /* White text for buy button */
+}
+
+body.dark-mode .buy-btn:hover {
+    background-color: #3a9348; /* Darker green on hover */
+}
+
+body.dark-mode .like-btn {
+    color: #c9c9c9; /* Lighter color for like button */
+}
+
+body.dark-mode .like-btn:hover {
+    color: #ff6c57; /* Red on hover */
+}
+
+body.dark-mode .right-nav .cart,
+body.dark-mode .right-nav .user-profile {
+    background-color: #444; /* Dark background for cart and user profile */
+    color: #f5f5f5; /* Light text color */
 }
 .menu li a.dark-mode {
     color: #f5f5f5;
@@ -125,11 +285,11 @@ body.dark-mode {
     position: absolute;
     top: -8px;
     right: -10px;
-    background: red;
+    background: #00c853;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     border-radius: 50%;
-    padding: 2px 5px;
+
 }
 
 /* Cart Modal */
@@ -148,6 +308,9 @@ body.dark-mode {
     padding: 20px;
     z-index: 1000;
     overflow-y: auto;
+}
+h3{
+    color: #202020;
 }
 
 .cart-header {
@@ -476,6 +639,16 @@ body.dark-mode {
     .navigation .menu-btn:checked ~ .menu{
         display: block;
     }
+    .cart i{
+        font-size: 10px;
+    }
+    .user-profile i{
+        font-size: 10px;
+    }
+    .theme-toggle i{
+        font-size: 10px;
+    }
+    
     #search-banner{
         height: 400px;
         background-size: 500px;
@@ -603,6 +776,7 @@ body.dark-mode {
     .footer-links{
         margin-top: 10px;
     }
+
 }
 @media(max-width:400px){
     .category-heading h2,
@@ -610,6 +784,12 @@ body.dark-mode {
     .client-heading h3,
     .partner-heading h3{
         font-size: 1.2rem;
+        color: #202020;
+    }
+    .right-nav #cart-count{
+        background-color: #00c853;
+        height: 10px;
+        width: 10px;
     }
 }
 @media(max-width:350px){
