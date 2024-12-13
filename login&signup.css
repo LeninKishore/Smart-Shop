@@ -10,8 +10,8 @@ body {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
+
 }
 
 .sec {
@@ -39,8 +39,8 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0 ;
+    padding: 0;
 }
 
 .head ul li {
@@ -148,96 +148,6 @@ form a {
     font-size: 0.9em;
 }
 
-.slide-left {
-    animation: slide-left 0.9s;
-    transition-timing-function:ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes slide-left {
-
-    from {
-        margin-left: 100%;
-        width: 100%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-
-}
-
-.slide-right {
-    animation: slide-right .4s;
-    transition-timing-function:ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes slide-right {
-
-    from {
-        left: 0%;
-    }
-
-    to {
-        left: 50%;
-    }
-
-}
-
-.slide-left2 {
-    animation: slide-left2 .4s;
-    transition-timing-function:ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes slide-left2 {
-    
-    from {
-        left: 100%;
-    }
-
-    to {
-        left: 50%;
-    }
-
-}
-
-.movel {
-    animation: movel 1.2s;
-    transition-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes movel {
-
-    from {
-        left:65%;
-    }
-
-    to {
-        left:0;
-    }
-
-}
-
-.mover {
-    animation: mover 1.2s;
-    transition-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes mover {
-
-    from {
-        left: 0%;
-    }
-
-    to {
-        left: 35%;
-    }
-}
 
 .hide {
     display: none;
@@ -247,29 +157,6 @@ form a {
     display: block;
 }
 
-.mover2 {
-    animation: mover2 1.2s;
-    transition-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes mover2 {
-    0%{left:0;width: 35%;}
-    50%{width: 40%;}
-    100%{left:65%;width: 35%;}
-}
-
-.movel2 {
-    animation: movel2 1.2s;
-    transition-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes movel2 {
-    0%{left:65%;width: 35%;}
-    50%{width: 40%;}
-    100%{left: 0;width: 35%;}
-}
 
 .sign_in_btn {
     background-color: #78d98f;

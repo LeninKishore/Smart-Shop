@@ -9,7 +9,7 @@
 
 body {
     background:#78d98f;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {
@@ -106,7 +106,7 @@ p {
 
 .tabShow {
     transition: all 0.5s ease-in;
-    width: 100%;
+    width: 100;
     position: relative;
 }
 

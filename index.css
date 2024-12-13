@@ -200,7 +200,7 @@ body.dark-mode {
 }
 
 body.dark-mode .menu li a {
-    color: #f5f5f5;
+    color:  #ea9321;
 }
 
 body.dark-mode .product-heading h3{
@@ -448,8 +448,6 @@ body.dark-mode .right-nav .user-profile {
     top: 150px;
     width: 300px;
     height: 500px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
     object-fit: contain;
     object-position: center;
     opacity: 0.7;
@@ -457,7 +455,6 @@ body.dark-mode .right-nav .user-profile {
 .bg-2{
     position: absolute;
     left: 60%;
-    transform: translateX(-60%);
     top: -75px;
     width: 150px;
     height: 150px;
@@ -467,9 +464,7 @@ body.dark-mode .right-nav .user-profile {
 .search-banner-text{
     display: flex;
     flex-direction: column;
-    /* width: 500px; */
     margin-left: 70px;
-    position: relative;
 }
 .search-banner-text h1{
     font-size: 3rem;
@@ -696,7 +691,6 @@ body.dark-mode .right-nav .user-profile {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #f6f6f656; */
     padding: 80px 0px;
     margin: 40px 0px;
     border-top: 1px solid whitesmoke;
