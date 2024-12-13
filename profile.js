@@ -4,11 +4,11 @@ const tab = document.querySelectorAll(".tabShow");
 // Function to handle tab switching
 function tabs(panelIndex) {
     tab.forEach(function(node, index) {
-        node.style.display = "none"; // Hide all tabs
-        tabBtn[index].classList.remove("active"); // Remove active class from all tabs
+        node.style.display = "none";
+        tabBtn[index].classList.remove("active");
     });
-    tab[panelIndex].style.display = "block"; // Show the selected tab
-    tabBtn[panelIndex].classList.add("active"); // Add active class to the clicked tab
+    tab[panelIndex].style.display = "block";
+    tabBtn[panelIndex].classList.add("active");
 }
 
 // Initialize by displaying the first tab
